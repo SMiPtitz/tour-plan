@@ -4,19 +4,45 @@
 @media (max-width: 992px)
   .container
     max-width: 760px
+  .logo
+    width: 132px
   .navbar
     &-top
       padding: 30px 0
     &__search
       margin-left: auto
-      min-width: 340px
     &-menu
       padding: 22px 0
       &__link
         font-size: 12px
         line-height: 15px
+  .search
+    &__input
+      width: 340px
 @media (max-width: 768px)
   .container
     max-width: 576px
     width: 92%
-  
+  .navbar
+    &__search, &__user, &-menu
+      display: none
+    &-top
+      &__menu-button
+        display: flex
+        width: 16px
+        height: 11px
+        padding: 0
+        align-items: center
+        justify-content: space-between
+        flex-direction: column
+        border: none
+        background-color: #fff
+        cursor: pointer
+  .menu-button
+    &__line
+      width: 16px
+      height: 1px
+      background-color: $text-color
+@media (max-width: 576px)
+  .logo
+    width: 99px
