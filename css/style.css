@@ -321,7 +321,7 @@ template {
   display: none;
 }
 
-.header-top {
+.navbar-top {
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -329,7 +329,7 @@ template {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.header-top__search {
+.navbar-top__search {
   margin-right: auto;
   margin-left: 108px;
 }
