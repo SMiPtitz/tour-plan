@@ -469,7 +469,11 @@ template {
 }
 .hotel-grid {
   display: flex;
-  align-items: flex-start;
+  justify-content: space-between;
+}
+.hotel-right {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -625,6 +629,13 @@ template {
   line-height: 19px;
   font-weight: 600;
   cursor: pointer;
+}
+
+.map {
+  width: 350px;
+  height: 213px;
+  background-color: #000;
+  border-radius: 4px;
 }
 
 @media (max-width: 1200px) {
