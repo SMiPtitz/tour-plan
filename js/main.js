@@ -20,7 +20,7 @@ $(document).ready(function() {
       prevEl: '.reviews-slider__button--prev',
     },
   });
-  
+
 // true JS
   var menuButton = document.querySelector(".menu-button");
   menuButton.addEventListener('click', function () {
@@ -48,4 +48,24 @@ $(document).ready(function() {
     modalDialog.removeClass("modal__dialog--active");
   }
 
+// валидация форм
+$('.form').each(function() {
+  $(this).validate({
+    errorClass: "invalid",
+    messages: {
+    name: {
+      required: "Укажите имя",
+      minlength: "Имя должно быть не короче 2 букв",
+    },
+    phone: {
+      required: "Укажите телефон",
+      phone: "Телефон должен содержать 11 цифр",
+    },
+    email: {
+      required: "Укажите почту",
+      email: "Формат почты должен быть name@domain.com",
+    },
+  },
+});
+});
 });
