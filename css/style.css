@@ -1278,6 +1278,10 @@ iframe {
     justify-self: start;
     grid-column: 1/3;
   }
+  .modal__dialog {
+    width: 80%;
+    padding: 33px 75px;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -1477,6 +1481,10 @@ iframe {
     grid-column: 1;
     justify-self: start;
   }
+  .modal__dialog {
+    width: 90%;
+    padding: 33px 65px;
+  }
 }
 @media (max-width: 576px) {
   .logo {
@@ -1552,5 +1560,8 @@ iframe {
   }
   .footer__form {
     width: 450px;
+  }
+  .modal__dialog {
+    padding: 30px 50px;
   }
 }/*# sourceMappingURL=style.css.map */
